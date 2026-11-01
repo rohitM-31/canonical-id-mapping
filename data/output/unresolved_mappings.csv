@@ -1,0 +1,14 @@
+source_system,source_id,event_ts,unresolved_reason,email_raw,phone_raw,full_name_raw,source_file,source_row_number,run_id
+web,web-00000043,2025-05-28T01:56:01Z,conflicting_identifiers,Sam.smith38@example.com,(200) 000-0004,sam  a smith,dataset_1.csv,50,manual__2026-11-01T09:43:45.560428+00:00__dataset_1
+billing,billing-00000135,2025-04-22T10:35:40Z,no_identifiers,,,,dataset_1.csv,172,manual__2026-11-01T09:43:45.560428+00:00__dataset_1
+crm,crm-00000130,2025-02-14T10:28:06Z,no_identifiers,,,,dataset_1.csv,127,manual__2026-11-01T09:43:45.560428+00:00__dataset_1
+crm,crm-00000141,2025-04-17T21:20:52Z,no_identifiers,,,,dataset_1.csv,46,manual__2026-11-01T09:43:45.560428+00:00__dataset_1
+crm,crm-00000172,2025-02-11T22:10:01Z,no_identifiers,,,,dataset_1.csv,178,manual__2026-11-01T09:43:45.560428+00:00__dataset_1
+crm,crm-00000099,2025-02-23T14:23:51Z,no_match,nobody99@nomatch.test,9000000099,Zed Nomatch99,dataset_1.csv,37,manual__2026-11-01T09:43:45.560428+00:00__dataset_1
+crm,crm-00000160,2025-03-01T19:21:40Z,no_match,nobody160@nomatch.test,9000000160,Zed Nomatch160,dataset_1.csv,152,manual__2026-11-01T09:43:45.560428+00:00__dataset_1
+crm,crm-00000189,2025-07-15T21:28:48Z,no_match,,,Vera A Smith,dataset_2.csv,22,manual__2026-11-01T09:43:45.560428+00:00__dataset_2
+web,web-00000010,2025-02-24T04:05:54Z,no_match,nobody10@nomatch.test,9000000010,Zed Nomatch10,dataset_1.csv,145,manual__2026-11-01T09:43:45.560428+00:00__dataset_1
+web,web-00000081,2025-04-11T01:47:16Z,no_match,,,dan  a smith,dataset_1.csv,137,manual__2026-11-01T09:43:45.560428+00:00__dataset_1
+web,web-00000108,2025-04-05T08:30:49Z,no_match,nobody108@nomatch.test,9000000108,Zed Nomatch108,dataset_1.csv,154,manual__2026-11-01T09:43:45.560428+00:00__dataset_1
+web,web-00000168,2025-04-22T00:23:12Z,no_match,nobody168@nomatch.test,9000000168,Zed Nomatch168,dataset_1.csv,11,manual__2026-11-01T09:43:45.560428+00:00__dataset_1
+web,web-00000171,2025-01-08T18:27:45Z,no_match,,,"Smith, Dan A",dataset_1.csv,101,manual__2026-11-01T09:43:45.560428+00:00__dataset_1

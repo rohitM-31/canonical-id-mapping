@@ -1,0 +1,12 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+logs/
+airflow_home/
+# sample outputs (CSV/MD/JSON in data/output) are committed; databases and the 100k run are not
+data/output/*.db
+data/output/large/
+data/large/

@@ -1,0 +1,5 @@
+run_id,source_file,status,started_at,ended_at,rows_read,rows_rejected,rows_duplicate,rows_inserted,rows_existing,rows_mapped,rows_unresolved,rows_late,error_message,warnings
+manual__2026-11-01T09:42:39.161550+00:00__dataset_1,dataset_1.csv,success,2026-11-01T09:42:40Z,2026-11-01T09:42:40Z,199,8,6,185,0,173,12,1,,
+manual__2026-11-01T09:42:39.161550+00:00__dataset_2,dataset_2.csv,success,2026-11-01T09:42:40Z,2026-11-01T09:42:40Z,34,0,0,34,0,33,1,6,,
+manual__2026-11-01T09:43:45.560428+00:00__dataset_1,dataset_1.csv,success,2026-11-01T09:43:46Z,2026-11-01T09:43:46Z,199,8,6,0,185,173,12,0,,
+manual__2026-11-01T09:43:45.560428+00:00__dataset_2,dataset_2.csv,success,2026-11-01T09:43:46Z,2026-11-01T09:43:46Z,34,0,0,0,34,33,1,0,,

@@ -1,0 +1,155 @@
+{
+  "checks": [
+    {
+      "check": "run_row_balance",
+      "description": "every successful run: rows_read = rejected + duplicate + inserted + existing",
+      "violations": 0,
+      "passed": true
+    },
+    {
+      "check": "run_outcome_balance",
+      "description": "every successful run: mapped + unresolved = inserted + existing",
+      "violations": 0,
+      "passed": true
+    },
+    {
+      "check": "reject_traceability",
+      "description": "latest run per file: quarantined rows = rejected + duplicate counters",
+      "violations": 0,
+      "passed": true
+    },
+    {
+      "check": "event_unknown_canonical",
+      "description": "mapped events whose canonical_id is missing from the master (referential integrity)",
+      "violations": 0,
+      "passed": true
+    },
+    {
+      "check": "history_unknown_canonical",
+      "description": "history rows whose canonical_id is missing from the master",
+      "violations": 0,
+      "passed": true
+    },
+    {
+      "check": "history_one_current_per_key",
+      "description": "each source key with mapped events has exactly one current history row",
+      "violations": 0,
+      "passed": true
+    },
+    {
+      "check": "history_contiguous",
+      "description": "consecutive intervals of a key touch (valid_to = next valid_from); current row has no valid_to",
+      "violations": 0,
+      "passed": true
+    },
+    {
+      "check": "history_covers_events",
+      "description": "sum of history event_count = number of mapped events",
+      "violations": 0,
+      "passed": true
+    },
+    {
+      "check": "conflicts_match_events",
+      "description": "keys with >1 canonical id are exactly the keys in mapping_conflict",
+      "violations": 0,
+      "passed": true
+    },
+    {
+      "check": "unresolved_have_reason",
+      "description": "unresolved events always carry a reason",
+      "violations": 0,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "summary": {
+    "events_by_source_system": [
+      {
+        "source_system": "billing",
+        "events": 62,
+        "mapped": 61,
+        "unresolved": 1
+      },
+      {
+        "source_system": "crm",
+        "events": 86,
+        "mapped": 80,
+        "unresolved": 6
+      },
+      {
+        "source_system": "web",
+        "events": 71,
+        "mapped": 65,
+        "unresolved": 6
+      }
+    ],
+    "mapped_by_rule": [
+      {
+        "match_rule": "exact_email",
+        "events": 116
+      },
+      {
+        "match_rule": "rule_phone",
+        "events": 55
+      },
+      {
+        "match_rule": "rule_name",
+        "events": 35
+      }
+    ],
+    "unresolved_by_reason": [
+      {
+        "unresolved_reason": "no_match",
+        "events": 8
+      },
+      {
+        "unresolved_reason": "no_identifiers",
+        "events": 4
+      },
+      {
+        "unresolved_reason": "conflicting_identifiers",
+        "events": 1
+      }
+    ],
+    "rejects_by_reason": [
+      {
+        "reject_reason": "duplicate_in_batch",
+        "records": 6
+      },
+      {
+        "reject_reason": "missing_source_id",
+        "records": 2
+      },
+      {
+        "reject_reason": "invalid_email",
+        "records": 2
+      },
+      {
+        "reject_reason": "unknown_source_system",
+        "records": 1
+      },
+      {
+        "reject_reason": "missing_source_system",
+        "records": 1
+      },
+      {
+        "reject_reason": "invalid_phone",
+        "records": 1
+      },
+      {
+        "reject_reason": "invalid_event_ts",
+        "records": 1
+      }
+    ],
+    "totals": [
+      {
+        "canonical_customers": 50,
+        "source_events": 219,
+        "quarantined_records": 14,
+        "history_rows": 198,
+        "one_to_many_conflicts": 22,
+        "source_keys_with_unresolved_events": 13
+      }
+    ]
+  }
+}

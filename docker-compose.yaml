@@ -1,0 +1,49 @@
+services:
+
+  postgres:
+    image: postgres:16
+    container_name: mapping_postgres
+    environment:
+      POSTGRES_USER: mapping_user
+      POSTGRES_PASSWORD: mapping_password
+      POSTGRES_DB: mapping_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mapping_user -d mapping_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  airflow:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: mapping_airflow
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      AIRFLOW__CORE__EXECUTOR: SequentialExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: sqlite:////opt/airflow/airflow.db
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: mapping_db
+      DB_USER: mapping_user
+      DB_PASSWORD: mapping_password
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./src:/opt/airflow/src
+      - ./data:/opt/airflow/data
+      - ./logs:/opt/airflow/logs
+      - ./tests:/opt/airflow/tests
+      - ./sql:/opt/airflow/sql
+    command: standalone
+
+volumes:
+  postgres_data:

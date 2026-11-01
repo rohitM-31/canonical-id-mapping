@@ -1,0 +1,35 @@
+source_system,source_id,event_ts,email,phone,full_name
+web,web-00000126,2025-06-05T03:07:52Z,cara.smith9@example.com,,
+crm,crm-00000175,2025-04-13T19:30:12Z,Rita.smith37@example.com,200.000.0037,
+web,web-00000108,2025-04-20T12:21:40Z,ANNA.SMITH5@EXAMPLE.COM,,
+crm,crm-00000073,2025-05-24T09:34:56Z,  gina.smith17@example.com ,200.000.0017,
+crm,crm-00000191,2025-07-10T09:49:10Z,XAN.SMITH47@EXAMPLE.COM,+1 200 000 0047,
+web,web-00000124,2025-07-20T03:53:40Z,  quin.smith36@example.com ,(200) 000-0036,
+crm,crm-00000084,2025-03-03T07:29:12Z,tom.smith40@example.com,1-200-000-0040,Tom A Smith
+web,web-00000017,2025-06-25T16:40:17Z,Ben.smith6@example.com,(200) 000-0006,BEN A SMITH
+crm,crm-00000057,2025-06-02T18:35:14Z,  anna.smith5@example.com ,2000000005,
+crm,crm-00000106,2025-03-21T05:11:27Z,HANK.SMITH18@EXAMPLE.COM,2000000018,HANK A SMITH
+web,web-00000117,2025-03-05T14:47:55Z,maya.smith29@example.com,,"Smith, Maya A"
+billing,billing-00000067,2025-03-24T20:41:34Z,LEO.SMITH26@EXAMPLE.COM,,LEO A SMITH
+crm,crm-00000128,2025-04-07T03:04:21Z,iris.smith21@example.com,200.000.0021,"Smith, Iris A"
+crm,crm-00000145,2025-06-08T03:54:22Z,  carl.smith8@example.com ,+1 200 000 0008,Carl A. Smith
+web,web-00000080,2025-02-19T13:26:59Z,Ian.smith20@example.com,2000000020,
+crm,crm-00000161,2025-01-08T23:11:39Z,  yuri.smith48@example.com ,(200) 000-0048,
+crm,crm-00000031,2025-05-21T17:45:04Z,Amir.smith4@example.com,1-200-000-0004,
+billing,billing-00000158,2025-03-02T13:06:37Z,Uma.smith42@example.com,,
+crm,crm-00000004,2025-01-27T06:39:45Z,Quin.smith36@example.com,200.000.0036,Quin A Smith
+crm,crm-00000114,2025-02-23T22:44:01Z,Wren.smith46@example.com,1-200-000-0046,WREN A SMITH
+crm,crm-00000194,2025-07-08T07:09:11Z,Tom.smith40@example.com,,
+crm,crm-00000189,2025-07-15T21:28:48Z,,,Vera A Smith
+web,web-00000010,2025-02-26T11:19:24Z,Kai.smith24@example.com,,  kai  a smith 
+crm,crm-00000099,2025-03-24T11:09:02Z,Maya.smith29@example.com,2000000029,
+crm,crm-00000192,2025-07-15T19:26:37Z,  hank.smith18@example.com ,1-200-000-0018,"Smith, Hank A"
+crm,crm-00000062,2025-04-05T12:47:46Z,Tom.smith40@example.com,200.000.0040,TOM A SMITH
+web,web-00000157,2025-06-29T04:03:45Z,jack.smith22@example.com,200.000.0022,
+billing,billing-00000193,2025-07-11T11:37:47Z,ben.smith6@example.com,200.000.0006,  ben  a smith 
+billing,billing-00000101,2025-03-24T03:30:45Z,Yuri.smith48@example.com,,YURI A SMITH
+web,web-00000134,2025-06-28T10:12:08Z,  kai.smith24@example.com ,+1 200 000 0024,
+web,web-00000142,2025-02-10T19:53:06Z,  gabe.smith16@example.com ,,"Smith, Gabe A"
+billing,billing-00000001,2025-02-18T14:14:44Z,Kate.smith25@example.com,2000000025,
+crm,crm-00000190,2025-07-06T01:49:20Z,,,Pia A Smith
+crm,crm-00000023,2025-06-14T20:36:26Z,dina.smith11@example.com,,
